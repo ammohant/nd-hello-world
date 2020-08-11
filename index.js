@@ -2,11 +2,10 @@ const http = require('http');
 
 const server = http.createServer((request, response) => {
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World Modified Twice!");
+    response.end("Hello World");
 });
 
 const port = process.env.PORT || 1337;
-console.log("Retring ing running at http://localhost:%d", port);
 server.listen(port);
 
 console.log("Server running at http://localhost:%d", port);
